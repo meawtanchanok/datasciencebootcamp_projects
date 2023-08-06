@@ -4,4 +4,6 @@ mtcars %>% glimpse()
 
 mtcars %>%
   select(mpg, hp, wt)%>%
-  summarise(meam(mpg))
+  summarise(avg_mpg = meam(mpg))
+
+print("done !")
